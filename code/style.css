@@ -1,0 +1,168 @@
+
+@font-face {
+   font-family: poppins;
+   src: url(../assets/Poppins-Medium.ttf);
+}
+body{
+  font-family:"poppins";
+} 
+html{
+  scroll-behavior: smooth;
+}
+.header-container{
+  background: hsl(25,100%,92%);
+  margin-left: -9px;
+  margin-right: -7px;
+  margin-top: -10px;
+  padding: 20px;
+}
+.container-wrapper,.main-content--container{
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  justify-content: space-evenly ;
+}
+.profile{
+  width: 80%;
+  border-radius: 10px;
+  margin-top: -150px;
+}
+.clip-path {
+  width: 200px;
+  height: 200px;
+  border-radius: 100%;
+  background: #f0f843 ;
+  margin-left: 60%;
+}
+.skills-path{
+  background: #f0f843;
+  width: 50px;
+  height: 50px;
+  border-radius:100% ;
+  margin-top: 20px;
+}
+.right{
+  margin-top: 30px;
+}
+.right h1{
+  font-weight: bolder;
+  font-size: 35px;
+  line-height: 30px;
+}
+.right section{
+  justify-content: center;
+  align-content: center;
+  overflow: hidden ;
+  height: 35px;
+}
+.right section p{
+  animation:move 5s ease-in-out infinite alternate;
+  height: 100%;
+  font-weight:500;
+  margin-top: -2px;
+  font-size: 28px;
+  align-items: center;
+  animation-delay: 1s;
+}
+@keyframes move{
+ /* 0%{
+    transform: translateY(-35px);
+  }*/
+  100%{
+    transform: translateY(-60px);
+  }
+}
+.main-content--container{
+  padding: 15px;
+}
+.eazymart p,.product-page p,.tip-calculator p{
+  border-left: 5px solid hsl(25,100%,92%) ;
+  padding-left: 10px;
+  margin-top: -10px;
+}
+h3{
+  font-size: 25px;
+  font-weight: 500;
+}
+.skills h3{
+  margin-top: -40px;
+  margin-left: 10px;
+}
+a{
+  text-decoration: none;
+}
+h4{
+  font-weight: 500;
+  font-size: 20px;
+}
+.skills ul{
+  margin-left: -20px;
+}
+.skills ul li,.resume ul li{
+  list-style: none;
+  display: inline-flex;
+  justify-content: space-between;
+}
+.skills ul li img{
+  margin:auto 5px;
+}
+aside{
+  background: hsl(25,100%,92%);
+  padding: 5px;
+  width: 97%;
+}
+.resume{
+  border: 2px solid hsl(25,100%,70%);
+  text-align: center;
+  height: 50px;
+  margin-top: 100px;
+  justify-content: center;
+  align-content: center;
+  border-radius: 5px;
+}
+.resume:hover{
+  background: hsl(25,100%, 70%);
+}
+.resume a{
+  color: black;
+  font-size: 20px;
+  font-weight: 500;
+  margin-left: -40px;
+  margin-top: 0px;
+  padding: 5px;
+}
+.resume li{
+  margin-top: -8px;
+}
+.product-page img{
+   border: 2px solid whitesmoke;
+   width: 100%;
+}
+.design{
+   width: 100%;
+}
+
+/*media queries*/
+@media screen and (max-width:470px){
+ .profile{
+   width: 70%;
+ }
+ .clip-path{
+   margin-left: 50%;
+ }
+ .resume{
+   background: hsl(25,100%, 70%);
+   margin-top: 0px;
+ }
+}
+@media screen and (min-width:500px){
+  .container-wrapper{
+    gap: 0px;
+  }
+  .container-wrapper,.main-content--container{
+   grid-template-columns:50% 50%;
+ } 
+   .right span p{
+     margin-top: 0px;
+   }
+}
